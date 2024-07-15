@@ -1,21 +1,23 @@
 import appLogo from "@/assets/logo.png";
 import Link from "next/link";
+import Image from "next/image";
 import classes from "./header.module.css";
+import NavLink from "../navigationLink/NavLink";
 
 export default function Header() {
   return (
     <header className={classes.header}>
       <Link className={classes.logo} href="/">
-        <img src={appLogo.src} role="link" alt="Go to homepage" />
-        FoodiesBlog
+        <Image src={appLogo} role="link" alt="Go to homepage" priority />
+        NextLevel Food
       </Link>
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link href="/meals">Browse Meals</Link>
+            <NavLink href="/meals">Browse Meals</NavLink>
           </li>
           <li>
-            <Link href="/community">Community</Link>
+            <NavLink href="/community">Community</NavLink>
           </li>
         </ul>
       </nav>
