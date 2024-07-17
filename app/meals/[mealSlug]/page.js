@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getMeal } from "@/lib/meals";
 import classes from "./page.module.css";
-//every component receives props from next JS
+// every component receives props from next JS
 // props => params => [mealSlug] to access the meal path details
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealSlug);
