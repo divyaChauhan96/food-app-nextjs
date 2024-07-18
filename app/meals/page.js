@@ -6,6 +6,11 @@ import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 import LoadingMeals from "@/components/meals/loading-meals";
 
+export const metadata = {
+  title: "Explore-Meals",
+  description: "Meals from all over the world!",
+};
+
 async function MealsListComponent() {
   const mealsList = await getMeals();
   return (

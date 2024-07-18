@@ -2,7 +2,7 @@ import AppHeader from "@/components/mainHeader/AppHeader";
 import "./globals.css";
 
 export const metadata = {
-  title: "Foodies",
+  title: "NextLevel Food",
   description: "Prepare meals at your home",
 };
 
