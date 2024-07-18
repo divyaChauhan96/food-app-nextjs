@@ -33,6 +33,8 @@ export default function MealDetailsPage({ params }) {
       <main>
         <p
           className={classes.instructions}
+          // try to avoid dangerusly set inner html as much as you can
+          // used package xss to monitor any vulnerable/ dangerous content
           dangerouslySetInnerHTML={{
             __html: meal.instructions,
           }}
