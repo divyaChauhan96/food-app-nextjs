@@ -1,4 +1,5 @@
 "use client";
+// Since we are using an event handler
 
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -10,6 +11,7 @@ export default function ImagePicker({ label, name }) {
   const imageInput = useRef();
 
   function handlePickClick() {
+    // custom image component triggers input element click
     imageInput.current.click();
   }
 
